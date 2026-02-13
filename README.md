@@ -49,4 +49,14 @@
 - For style convenience, I have also included the SASS - AKA .scss - yipee, I can now do BEM easily
     - Sidenot - got sidetracked because I heard that Vanilla CSS now support this, but it just supports nested selector syntax, not partial like &__title lel
 
+## From static to DYNAMIC, yay!
+- Now, it was time to start figuring out the dynamic part - after I have spent way too much time on tiddly-iddlying the scss, etc
+- As I have pretty much known and guessed, it React doesn't use some directives like Vue, it uses JavaScript functions
+- First things first - I have defined the TypeScript types for my components in src/types.ts
+    - This is pretty neat - I have used mostly JavaScript, so TypeScript is nice change of pace - I'll use TypeScript more often, it's kinda godsent
+- With types defined, I went ahead and started defining props - differnt from Vue - in React, as the component itself it a function, it takes a one object parameter - to get parameters, we simply use destructuring
+    - Got stuck a bit on this lol - so, once again, use DESTRUCTURING on the ONE object parameter in the component function
+- I have updated the components
+- Also, I have added a state - in `App`, I have used `useState` - something like `ref` in Vue, but here, we have the value itself and update method, interesting
+- Anyways, I have defined default data for state, set up the components - now it works - yay!
 
