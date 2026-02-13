@@ -1,4 +1,5 @@
-import './App.css'
+import './App.scss'
+import ColumnGroup from './components/ColumnGroup'
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       </header>
 
       <main>
-          <h1>Hello There</h1>
+          <h1>Kanban Tasks App</h1>
 
+          <ColumnGroup />
       </main>
 
       <footer></footer>

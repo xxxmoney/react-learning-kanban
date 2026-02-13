@@ -25,3 +25,28 @@
         - So as of now, I have just a simple component with `header`, `main`, `footer`
     - As of now, the components seem straightforward and intuitive - it's just a function which returns template fragment, kinda neat so far, I wonder regarding the props passing, state management, etc
 
+
+## The component - TSX
+- Once I got this, I moved along - to understanding the components
+- Essentially, unline Vue, in which is script and template, in React, it's mixed up
+- That's TSX (or JSX with JavaScript, we are using TypeScript here)
+- Easily explained - it look like  HTML, but it's syntax sugar
+    - We are basically running JavaScript (or rather TypeScript in this case but w/e, i'll mix it up here for sake of explanation) code along with specifying the HTML
+
+## Creating and setting up first components
+- As I am making a simple Kanban app, let's create the first components - for now static
+- As mentioned, each component is basically just a function, which returns the template
+- I have created simple `TaskCard.tsx` and `Column.tsx` which for now return static HTML
+- When specifying properties for elements, for some, like class, we have to use different, like `className` (because they are reserved names - the class in script)
+- I have also used using component in other component - improting `TaskCard` in `Column` and using it
+- I have also imported and used the `Column` in `App.tsx`
+
+## Start of the line improvements
+- Taking my experience with Vue and overall web dev, I have already made the components as these:
+    - ColumnGroup - this will hold all the column
+    - Column - the column, holds the tasks
+    - TaskCard - displays the task
+- For style convenience, I have also included the SASS - AKA .scss - yipee, I can now do BEM easily
+    - Sidenot - got sidetracked because I heard that Vanilla CSS now support this, but it just supports nested selector syntax, not partial like &__title lel
+
+
