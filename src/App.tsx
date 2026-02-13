@@ -3,8 +3,7 @@ import type { ColumnType } from './types';
 import ColumnGroup from './components/ColumnGroup'
 import { useState } from 'react';
 
-
-function App() {
+export default function App() {
   const [columnList, setColumnList] = useState<ColumnType[]>([
     {
       id: 'column-1',
@@ -58,5 +57,3 @@ function App() {
     </>
   )
 }
-
-export default App
